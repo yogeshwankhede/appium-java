@@ -1,0 +1,9 @@
+GenralStore 
+appPackageName=com.androidsample.generalstore
+appActivity=.SplashActivity
+ApiDemo
+appaPackage=io.appium.android.apis
+appActivity=.ApiDemos
+TouchScreenTest
+appaPackage=jp.rallwell.siriuth.touchscreentest
+appActivity=.TouchScreenTestActivity
