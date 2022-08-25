@@ -14,7 +14,7 @@ import io.appium.java_client.MobileElement;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.remote.MobileCapabilityType;
 
-public class Dream11Base {
+public class Dream11Test {
 	DesiredCapabilities dc;
 	public AndroidDriver<WebElement> driver;
 	@BeforeClass

@@ -3,11 +3,17 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="org.tyss.javacollections.JavaListOperations">
+      <class name="org.tyss.dream11.TestCase_002">
         <methods>
-          <include name="addDataToList"/>
+          <include name="connectionSetup"/>
+          <include name="parameterization"/>
+          <include name="openApp"/>
+          <include name="closeCon"/>
+          <include name="closeAPIConnections"/>
+          <include name="startServer"/>
+          <include name="goMartEndToEndTest"/>
         </methods>
-      </class> <!-- org.tyss.javacollections.JavaListOperations -->
+      </class> <!-- org.tyss.dream11.TestCase_002 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

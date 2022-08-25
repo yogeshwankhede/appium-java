@@ -1,5 +1,7 @@
 package org.tyss.gomartDemo;
 
+import static org.testng.Assert.assertEquals;
+
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.concurrent.TimeUnit;
@@ -50,6 +52,9 @@ public class GoMartEndToEndTest {
 		String actualbill = driver.findElement(By.xpath("(//android.view.View[@text='₹ 2848']")).getText();
 		String[] bill = actualbill.split(" ");
 		System.out.println(bill);
+		
+		assertEquals(false, null);
+		System.out.println("Testcase Pass");
 		
 		
 		

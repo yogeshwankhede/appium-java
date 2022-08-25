@@ -17,7 +17,8 @@ import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.remote.MobileCapabilityType;
 import io.appium.java_client.service.local.AppiumDriverLocalService;
 
-public class BaseClass {
+public class ApiBaseClass {
+	DesiredCapabilities dc;
 	AppiumDriverLocalService service;
 	AndroidDriver<WebElement> driver;
 	@BeforeSuite
@@ -40,7 +41,7 @@ public class BaseClass {
 	}
 	 @BeforeMethod
 	 public void openApp() throws MalformedURLException {
-			DesiredCapabilities dc = new DesiredCapabilities();
+			dc = new DesiredCapabilities();
 			dc.setCapability(MobileCapabilityType.PLATFORM_NAME, "Android");
 			dc.setCapability(MobileCapabilityType.PLATFORM_VERSION, "12");
 			dc.setCapability(MobileCapabilityType.UDID, "emulator-5554");

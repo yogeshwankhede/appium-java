@@ -4,6 +4,8 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.concurrent.TimeUnit;
 
+import org.genrals.ApiBaseClass;
+import org.genrals.DataHandler;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.remote.DesiredCapabilities;
@@ -13,15 +15,23 @@ import io.appium.java_client.MobileElement;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.remote.MobileCapabilityType;
 
-public class TestCase_002 {
+public class TestCase_002 extends ApiBaseClass{
 	@Test
 	public void goMartEndToEndTest() throws MalformedURLException, InterruptedException {
+		DataHandler data= new DataHandler();
+		String Package = data.getDataFromProperty("appPackage");
+		String Activity = data.getDataFromProperty("appActivity");
+		String udid = data.getDataFromProperty("deviceId");
+		String platformName=data.getDataFromProperty("platformName");
+		
+		
+		
 		DesiredCapabilities dc = new DesiredCapabilities();
-		dc.setCapability(MobileCapabilityType.PLATFORM_NAME, "Android");
+		dc.setCapability(MobileCapabilityType.PLATFORM_NAME, platformName);
 		dc.setCapability(MobileCapabilityType.PLATFORM_VERSION, "12");
-		dc.setCapability(MobileCapabilityType.UDID, "emulator-5554");
-		dc.setCapability("appPackage", "com.dream11sportsguru");
-		dc.setCapability("appActivity", ".MainActivity");
+		dc.setCapability(MobileCapabilityType.UDID, udid);
+		dc.setCapability("appPackage", Package);
+		dc.setCapability("appActivity", Activity);
 		
 		
 		AndroidDriver<WebElement> driver = new AndroidDriver<WebElement>(new URL("http://localhost:4723/wd/hub"), dc);

@@ -3,7 +3,7 @@ package org.tyss.dream11;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.pagefactory.AndroidFindBy;
 
-public class ShopHomePage extends Dream11Base {
+public class ShopHomePage extends Dream11Test {
 	@AndroidFindBy(xpath = "//android.widget.Image[@text='Team India']")
 	private MobileElement teamIndiaBannerLink;
 	

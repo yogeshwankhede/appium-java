@@ -12,7 +12,7 @@ import io.appium.java_client.android.AndroidDriver;
  */
 public class CommanFunctionalities {
 	AndroidDriver<WebElement> driver;
-	
+
 	/**
 	 * This Method is to Scroll by visibleText
 	 * @param driver
@@ -22,8 +22,8 @@ public class CommanFunctionalities {
 	public static void scrolltoElement(AndroidDriver<WebElement> driver,String an, String av) {
 		driver.findElementByAndroidUIAutomator("new UiScrollable(new UiSelector()).scrollIntoView("+an+"(\""+av+"\"))");
 	}
-	
-	
+
+
 	/**
 	 * This methos is for tap action by element
 	 * @param finger
@@ -34,8 +34,8 @@ public class CommanFunctionalities {
 	public void tapActionByElement(int finger,WebElement element,int time) {
 		driver.tap(finger, element, time);
 	}
-	
-	
+
+
 	/**
 	 * This Method is for tap action by Co-ordinates
 	 * @param finger
@@ -46,7 +46,7 @@ public class CommanFunctionalities {
 	public void tapActionByCoordinates(int finger,int x,int y, int time) {
 		driver.tap(finger, x, y, time);
 	}
-	
+
 	/**
 	 * This method is for swipe action
 	 * @param x1
@@ -58,7 +58,7 @@ public class CommanFunctionalities {
 	public void swipeByXandY(int x1,int y1,int x2,int y2,int timeInMsec) {
 		driver.swipe(x1, y1, x2, y2, timeInMsec);
 	}
-	
+
 	/**
 	 * This method is for drag and drop action
 	 * @param src
