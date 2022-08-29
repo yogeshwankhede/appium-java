@@ -51,7 +51,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\yogir\AppData\Local\Temp\testng-eclipse-585553723\testng-customsuite.xml</span>
+                    <span>C:\Users\yogir\AppData\Local\Temp\testng-eclipse-201672212\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -104,7 +104,7 @@
                     <div class="method-list-content failed suite-Default_suite">
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="org.tyss.dream11.TestCase_002" class="method navigator-link" hash-for-method="goMartEndToEndTest">goMartEndToEndTest</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="org.tyss.appium36.practice.ToasterMessageTest" class="method navigator-link" hash-for-method="appInBackGroundTest">appInBackGroundTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Default_suite -->
@@ -122,17 +122,19 @@
           <div class="suite-Default_suite-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
-              <span class="class-name">org.tyss.dream11.TestCase_002</span>
+              <span class="class-name">org.tyss.appium36.practice.ToasterMessageTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="goMartEndToEndTest">
-                  </a> <!-- goMartEndToEndTest -->
-                  <span class="method-name">goMartEndToEndTest</span>
-                  <div class="stack-trace">java.lang.NullPointerException
-	at org.genrals.DataHandler.getDataFromProperty(DataHandler.java:118)
-	at org.tyss.dream11.TestCase_002.goMartEndToEndTest(TestCase_002.java:22)
+                  <a name="appInBackGroundTest">
+                  </a> <!-- appInBackGroundTest -->
+                  <span class="method-name">appInBackGroundTest</span>
+                  <div class="stack-trace">java.lang.NoClassDefFoundError: org/openqa/selenium/remote/internal/ApacheHttpClient$Factory
+	at io.appium.java_client.remote.AppiumCommandExecutor.&lt;init&gt;(AppiumCommandExecutor.java:55)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:131)
+	at io.appium.java_client.android.AndroidDriver.&lt;init&gt;(AndroidDriver.java:92)
+	at org.tyss.appium36.practice.ToasterMessageTest.appInBackGroundTest(ToasterMessageTest.java:25)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -161,6 +163,11 @@
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.lang.ClassNotFoundException: org.openqa.selenium.remote.internal.ApacheHttpClient$Factory
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:581)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:178)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521)
+	... 32 more
 
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
@@ -170,7 +177,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\yogir\AppData\Local\Temp\testng-eclipse-585553723\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\yogir\AppData\Local\Temp\testng-eclipse-201672212\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -179,7 +186,7 @@
 &lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;org.tyss.dream11.TestCase_002&quot;/&gt;
+      &lt;class name=&quot;org.tyss.appium36.practice.ToasterMessageTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -221,14 +228,14 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'goMartEndToEndTest')
-data.setCell(0, 2, 'org.tyss.dream11.TestCase_002')
-data.setCell(0, 3, 12);
+data.setCell(0, 1, 'appInBackGroundTest')
+data.setCell(0, 2, 'org.tyss.appium36.practice.ToasterMessageTest')
+data.setCell(0, 3, 146);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 12 ms</span>
+              <span class="suite-total-time">Total running time: 146 ms</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -254,37 +261,13 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">org.tyss.dream11.TestCase_002</div> <!-- chronological-class-name -->
-              <div class="configuration-suite before">
-                <span class="method-name">connectionSetup</span>
-                <span class="method-start">0 ms</span>
-              </div> <!-- configuration-suite before -->
-              <div class="configuration-test before">
-                <span class="method-name">parameterization</span>
-                <span class="method-start">9 ms</span>
-              </div> <!-- configuration-test before -->
-              <div class="configuration-class before">
-                <span class="method-name">startServer</span>
-                <span class="method-start">22 ms</span>
-              </div> <!-- configuration-class before -->
-              <div class="configuration-method before">
-                <span class="method-name">openApp</span>
-                <span class="method-start">5284 ms</span>
-              </div> <!-- configuration-method before -->
+              <div class="chronological-class-name">org.tyss.appium36.practice.ToasterMessageTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">goMartEndToEndTest</span>
-                <span class="method-start">61109 ms</span>
+                <span class="method-name">appInBackGroundTest</span>
+                <span class="method-start">0 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-test after">
-                <span class="method-name">closeAPIConnections</span>
-                <span class="method-start">61132 ms</span>
-              </div> <!-- configuration-test after -->
-              <div class="configuration-suite after">
-                <span class="method-name">closeCon</span>
-                <span class="method-start">61224 ms</span>
-              </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

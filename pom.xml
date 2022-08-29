@@ -33,6 +33,14 @@
 <dependencies>
 <!-- ADD YOUR DEPENDENCY HERE AFTER-->
 
+<!-- https://mvnrepository.com/artifact/com.saucelabs/sauce_bindings -->
+<dependency>
+    <groupId>com.saucelabs</groupId>
+    <artifactId>sauce_bindings</artifactId>
+    <version>1.2.0</version>
+</dependency>
+
+
 
 <!-- https://mvnrepository.com/artifact/io.appium/java-client -->
 <dependency>

@@ -10,7 +10,7 @@ import io.appium.java_client.android.AndroidDriver;
  * @author Mr.Yog
  *
  */
-public class CommanFunctionalities {
+public class TouchActions {
 	AndroidDriver<WebElement> driver;
 
 	/**

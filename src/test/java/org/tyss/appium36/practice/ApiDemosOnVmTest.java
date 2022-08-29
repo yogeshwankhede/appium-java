@@ -5,7 +5,7 @@ import java.net.URL;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
-import org.genrals.ApiBaseClass;
+import org.genrals.AppiumBaseClass;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.remote.DesiredCapabilities;
@@ -13,7 +13,7 @@ import org.testng.annotations.Test;
 
 import io.appium.java_client.android.AndroidDriver;
 
-public class ApiDemosOnVmTest extends ApiBaseClass{
+public class ApiDemosOnVmTest extends AppiumBaseClass{
 	@Test
 	public void apiActions() throws MalformedURLException {
 		DesiredCapabilities dc = new DesiredCapabilities();

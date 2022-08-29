@@ -3,17 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="org.tyss.dream11.TestCase_002">
+      <class name="org.tyss.appium36.practice.ToasterMessageTest">
         <methods>
-          <include name="connectionSetup"/>
-          <include name="parameterization"/>
-          <include name="openApp"/>
-          <include name="closeCon"/>
-          <include name="closeAPIConnections"/>
-          <include name="startServer"/>
-          <include name="goMartEndToEndTest"/>
+          <include name="appInBackGroundTest"/>
         </methods>
-      </class> <!-- org.tyss.dream11.TestCase_002 -->
+      </class> <!-- org.tyss.appium36.practice.ToasterMessageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

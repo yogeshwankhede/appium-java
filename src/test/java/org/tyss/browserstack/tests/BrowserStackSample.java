@@ -29,14 +29,14 @@ public class BrowserStackSample {
 				new URL("http://hub.browserstack.com/wd/hub"), caps);
 		// Test case for the BrowserStack sample Android app.
 		// If you have uploaded your app, update the test case here.
-		AndroidElement searchElement = (AndroidElement) new WebDriverWait(driver, 30).until(
-				ExpectedConditions.elementToBeClickable(
-						MobileBy.AccessibilityId("Search Wikipedia")));
-		searchElement.click();
-		AndroidElement insertTextElement = (AndroidElement) new WebDriverWait(driver, 30).until(
-				ExpectedConditions.elementToBeClickable(
-						MobileBy.id("org.wikipedia.alpha:id/search_src_text")));
-		insertTextElement.sendKeys("BrowserStack");
+//		AndroidElement searchElement = (AndroidElement) new WebDriverWait(driver, 30).until(
+//				ExpectedConditions.elementToBeClickable(
+//						MobileBy.AccessibilityId("Search Wikipedia")));
+//		searchElement.click();
+//		AndroidElement insertTextElement = (AndroidElement) new WebDriverWait(driver, 30).until(
+//				ExpectedConditions.elementToBeClickable(
+//						MobileBy.id("org.wikipedia.alpha:id/search_src_text")));
+//		insertTextElement.sendKeys("BrowserStack");
 		Thread.sleep(5000);
 		List<AndroidElement> allProductsName = driver.findElementsByClassName(
 				"android.widget.TextView");

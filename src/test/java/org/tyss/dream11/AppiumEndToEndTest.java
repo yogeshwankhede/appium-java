@@ -4,6 +4,7 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.concurrent.TimeUnit;
 
+import org.genrals.AppActions;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.remote.DesiredCapabilities;
@@ -18,6 +19,7 @@ public class AppiumEndToEndTest {
 
 	public void goMartEndToEndTest() throws MalformedURLException, InterruptedException {
 		DesiredCapabilities dc = new DesiredCapabilities();
+		AppActions apa = new AppActions();
 		dc.setCapability(MobileCapabilityType.PLATFORM_NAME, "Android");
 		dc.setCapability(MobileCapabilityType.PLATFORM_VERSION, "12");
 		dc.setCapability(MobileCapabilityType.UDID, "emulator-5554");
@@ -43,10 +45,12 @@ public class AppiumEndToEndTest {
 		scrolltoElement(driver, "text", "Jackets");
         //driver.swipe(512, 1932, 512, 612, 5000);
         
-       //click on jacket
-      MobileElement jacket=(MobileElement) driver.findElement(By.xpath("//android.view.View[@text='Jackets']"));
-   	driver.tap(1, jacket, 500);
-		Thread.sleep(5000);
+       //wait till jacket is visible
+//      By jacket=(By) driver.findElement(By.xpath("//android.view.View[@text='Jackets']"));
+//		apa.waitForVisibility(jacket);
+		
+		MobileElement jackets = (MobileElement) driver.findElement(By.xpath("//android.view.View[@text='Jackets']"));
+				driver.tap(1,jackets, 500);
 		
 		//click on NBA Jacket
 		WebElement nbaBlack = driver.findElement(By.xpath("(//android.view.View[@text='NBA - Los Angeles Lakers'])[1]"));

@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Aug 25 14:12:49 IST 2022</td>
+<td>Started on:</td><td>Mon Aug 29 17:19:24 IST 2022</td>
 </tr>
-<tr><td>Total time:</td><td>61 seconds (61124 ms)</td>
+<tr><td>Total time:</td><td>0 seconds (215 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,10 +75,12 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='org.tyss.dream11.TestCase_002.goMartEndToEndTest()'><b>goMartEndToEndTest</b><br>Test class: org.tyss.dream11.TestCase_002</td>
-<td><div><pre>java.lang.NullPointerException
-	at org.genrals.DataHandler.getDataFromProperty(DataHandler.java:118)
-	at org.tyss.dream11.TestCase_002.goMartEndToEndTest(TestCase_002.java:22)
+<td title='org.tyss.appium36.practice.ToasterMessageTest.appInBackGroundTest()'><b>appInBackGroundTest</b><br>Test class: org.tyss.appium36.practice.ToasterMessageTest</td>
+<td><div><pre>java.lang.NoClassDefFoundError: org/openqa/selenium/remote/internal/ApacheHttpClient$Factory
+	at io.appium.java_client.remote.AppiumCommandExecutor.&lt;init&gt;(AppiumCommandExecutor.java:55)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:131)
+	at io.appium.java_client.android.AndroidDriver.&lt;init&gt;(AndroidDriver.java:92)
+	at org.tyss.appium36.practice.ToasterMessageTest.appInBackGroundTest(ToasterMessageTest.java:25)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -107,10 +109,17 @@ function toggleAllBoxes() {
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace379430898", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace379430898'><pre>java.lang.NullPointerException
-	at org.genrals.DataHandler.getDataFromProperty(DataHandler.java:118)
-	at org.tyss.dream11.TestCase_002.goMartEndToEndTest(TestCase_002.java:22)
+Caused by: java.lang.ClassNotFoundException: org.openqa.selenium.remote.internal.ApacheHttpClient$Factory
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:581)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:178)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521)
+	... 32 more
+</pre></div><a href='#' onClick='toggleBox("stack-trace2143582219", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2143582219'><pre>java.lang.NoClassDefFoundError: org/openqa/selenium/remote/internal/ApacheHttpClient$Factory
+	at io.appium.java_client.remote.AppiumCommandExecutor.&lt;init&gt;(AppiumCommandExecutor.java:55)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:131)
+	at io.appium.java_client.android.AndroidDriver.&lt;init&gt;(AndroidDriver.java:92)
+	at org.tyss.appium36.practice.ToasterMessageTest.appInBackGroundTest(ToasterMessageTest.java:25)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -139,9 +148,14 @@ function toggleAllBoxes() {
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.lang.ClassNotFoundException: org.openqa.selenium.remote.internal.ApacheHttpClient$Factory
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:581)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:178)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521)
+	... 32 more
 </pre></div></td>
 <td>0</td>
-<td>org.tyss.dream11.TestCase_002@7fd50002</td></tr>
+<td>org.tyss.appium36.practice.ToasterMessageTest@24fcf36f</td></tr>
 </table><p>
 </body>
 </html>

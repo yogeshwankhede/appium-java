@@ -1,17 +1,12 @@
 package org.genrals;
 
-import java.awt.Dimension;
 import java.util.HashMap;
 import java.util.Set;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
 import io.appium.java_client.AppiumDriver;
-import io.appium.java_client.TouchAction;
 import io.appium.java_client.android.AndroidDriver;
 /**
  * This class contains all App common actions
@@ -58,18 +53,18 @@ public class AppActions {
 	 * @param targetElement
 	 * @return
 	 */
-	public boolean waitForVisibility(By targetElement) {
-		try {
-
-			WebDriverWait wait = new WebDriverWait(driver, timeOut);
-			wait.until(ExpectedConditions.visibilityOfElementLocated(targetElement));
-			return true;
-		} catch (Exception e) {
-			System.out.println("Element is not visible: " + targetElement);
-			throw e;
-
-		}
-	}
+//	public boolean waitForVisibility(By targetElement) {
+//		try {
+//
+//			WebDriverWait wait = new WebDriverWait(driver, timeOut);
+//			wait.until(ExpectedConditions.visibilityOfElementLocated(targetElement));
+//			return true;
+//		} catch (Exception e) {
+//			System.out.println("Element is not visible: " + targetElement);
+//			throw e;
+//
+//		}
+//	}
 
 
 	/**
@@ -110,6 +105,6 @@ public class AppActions {
 	public void openNotifications() {
         ((AndroidDriver<WebElement>) driver).openNotifications();
 	}
-	
+
 	
 }
