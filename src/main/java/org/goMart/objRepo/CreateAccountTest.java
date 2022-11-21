@@ -61,5 +61,9 @@ public class CreateAccountTest {
 	public MobileElement getSignUpButton() {
 		return signUpButton;
 	}
+	public void openApp(){
+	}
+	public void closeApp(){
+	}
 
 }
