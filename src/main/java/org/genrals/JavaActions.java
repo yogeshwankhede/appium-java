@@ -3,6 +3,10 @@ package org.genrals;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Random;
+
+public void main handleData(){
+	((AndroidDriver).Driver).toggleData())
+	}
 /**
  * This class provies common Java functionsS
  * @author Mr.Yog
