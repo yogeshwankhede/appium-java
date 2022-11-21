@@ -29,11 +29,11 @@ public void CreateAccountTest(WebDriver driver) {
 }
 
 public void setAccountPage() {
-	createAccountButton.tap(1, 500);
+	createAccountButton.tap(1, 900);
 	userNameTextBox.sendKeys("Veer123");
 	emailTextBox.sendKeys("veer123@gmail.com");
 	passwordTextBox.sendKeys("Veer123@abc");
-	signUpButton.tap(1, 500);
+	signUpButton.tap(1, 900);
 
 
 
